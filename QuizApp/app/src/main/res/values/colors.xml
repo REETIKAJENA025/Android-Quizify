@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic app colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 🎉 Confetti Colors -->
+    <array name="konfetti_colors">
+        <item>#FFD700</item> <!-- Gold -->
+        <item>#FF69B4</item> <!-- Pink -->
+        <item>#00C853</item> <!-- Green -->
+        <item>#2196F3</item> <!-- Blue -->
+        <item>#FF9800</item> <!-- Orange -->
+    </array>
+</resources>

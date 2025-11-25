@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="#BAD999"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Progress bar at the top -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:max="6"
+        android:progress="0"
+        android:progressTint="#4CAF50"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Row: Score (left) and Timer (right) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:text="Score: 0/0 (0%)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:text="00:10"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D84315"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Question text -->
+    <TextView
+        android:id="@+id/questionText"
+        android:text="Question will appear here"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Options -->
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:text="Option 1"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:buttonTint="#4CAF50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:text="Option 2"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:buttonTint="#4CAF50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:text="Option 3"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:buttonTint="#4CAF50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/option4"
+            android:text="Option 4"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:buttonTint="#4CAF50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <!-- Next button -->
+    <Button
+        android:id="@+id/nextBtn"
+        android:text="Next ➡️"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
